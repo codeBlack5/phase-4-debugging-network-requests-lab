@@ -64,10 +64,17 @@ developing your own process.
 
   - How I debugged:
 
+  In the `toys_controller#create` action, I updated the `Toys.create` to `Toy.create`
+
 - Update the number of likes for a toy
 
   - How I debugged:
 
+  I added  `render json: toy` to the create action in the `toys_controller#create`
+
+
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+
+  I added `:destroy` route to the `toy` resources
